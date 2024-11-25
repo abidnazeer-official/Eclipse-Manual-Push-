@@ -10,7 +10,7 @@ import antech.interfaces.Engine;
 public class Corolla implements Car {
 	
 	@Autowired
-	@Qualifier("V8Engine")
+	@Qualifier("V6Engine")
 	Engine engine;
 	
 //	public Corolla(Engine engine) {

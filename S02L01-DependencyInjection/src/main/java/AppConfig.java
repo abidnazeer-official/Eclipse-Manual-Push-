@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Configuration;
 
 import antech.car.Corolla;
 import antech.car.Swift;
+import antech.specs.EngineType;
 import antech.specs.V6;
 import antech.specs.V8;
 
@@ -21,13 +22,14 @@ public class AppConfig {
 		return new Corolla();
 	}
 	
-	@Bean("V6Engine")
-	public V6 v6(){
-		return new V6();
+	@Bean("Unknown")
+	public EngineType type(){
+		return new EngineType();
 	}
 	
-	@Bean("V8Engine")
-	public V8 v8(){
-		return new V8();
+	@Bean("V6Engine")
+	public EngineType V6type() {
+		return new EngineType("V6 Engine");
 	}
+	
 }
