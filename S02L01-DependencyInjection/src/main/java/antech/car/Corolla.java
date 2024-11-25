@@ -2,16 +2,15 @@ package antech.car;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 
 import antech.interfaces.Car;
 import antech.interfaces.Engine;
 
-@Component("corolla")
+
 public class Corolla implements Car {
 	
 	@Autowired
-	@Qualifier("V6Engine")
+	@Qualifier("V8Engine")
 	Engine engine;
 	
 //	public Corolla(Engine engine) {

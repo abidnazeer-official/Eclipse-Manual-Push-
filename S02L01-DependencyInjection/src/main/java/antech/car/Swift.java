@@ -1,9 +1,7 @@
 package antech.car;
 
-import org.springframework.stereotype.Component;
-
 import antech.interfaces.Car;
-@Component("swift")
+
 public class Swift implements Car {
 
 	@Override
